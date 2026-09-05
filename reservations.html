@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a table — Sofra · Anatolian kitchen in Dhaka</title>
+  <meta name="description" content="Reserve a table at Sofra, Gulshan, Dhaka — by WhatsApp or email. Private dining for 12 to 40 guests.">
+  <meta property="og:title" content="Book a table — Sofra">
+  <meta property="og:image" content="https://sofra.com.bd/assets/img/photos/hero-reserve.jpg">
+  <meta name="theme-color" content="#54131e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Poppins:wght@200;300;400&family=Noto+Serif+Bengali:wght@500;600&family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-left">
+        <button class="nav-toggle" type="button" aria-controls="drawer" aria-expanded="false" data-i18n-aria="nav.toggle"><span></span><span></span><span></span></button>
+      </div>
+      <a class="brand" href="index.html" aria-label="Sofra"><span class="logo"></span></a>
+      <div class="header-cta">
+        <a class="book" href="reservations.html" data-i18n="nav.reserve"></a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="bn" aria-pressed="false">বাং</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="logo" role="img" aria-label="Sofra"></span>
+      <button class="drawer-close" type="button"><span data-i18n="nav.close"></span> ✕</button>
+    </div>
+    <nav aria-label="Main">
+      <a href="index.html"><span data-i18n="nav.home"></span><small>Ana Sayfa</small></a>
+      <a href="about.html"><span data-i18n="nav.about"></span><small>Hakkımızda</small></a>
+      <a href="menu.html"><span data-i18n="nav.menu"></span><small>Menüler</small></a>
+      <a href="index.html#table"><span data-i18n="nav.table"></span><small>Sofra Tabakları</small></a>
+      <a href="index.html#events"><span data-i18n="nav.events"></span><small>Etkinlikler</small></a>
+      <a href="gallery.html"><span data-i18n="nav.gallery"></span><small>Galeri</small></a>
+      <a href="reservations.html"><span data-i18n="nav.reserve"></span><small>Rezervasyon</small></a>
+    </nav>
+    <div class="meta">
+      <p data-i18n="contact.address"></p>
+      <p><a href="tel:" data-site="phone"></a><br><a href="mailto:" data-site="email"></a></p>
+      <p data-i18n="top.hours"></p>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero hero-page">
+      <div class="media"><img src="assets/img/photos/hero-reserve.jpg" alt="Two sharing boards on a table at Sofra" width="1600" height="1067" fetchpriority="high"></div>
+      <div class="content">
+        <p class="eyebrow" data-i18n="reserve.eyebrow"></p>
+        <h1 data-i18n="reserve.title" data-i18n-title="reserve.title"></h1>
+        <div class="rule"></div>
+        <p data-i18n="reserve.text"></p>
+      </div>
+    </section>
+
+    <section class="section center">
+      <div class="container reveal">
+        <form class="form" id="reserve-form" novalidate>
+          <div class="field">
+            <label for="r-name" data-i18n="reserve.name"></label>
+            <input id="r-name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="r-phone" data-i18n="reserve.phone"></label>
+            <input id="r-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel">
+          </div>
+          <div class="field">
+            <label for="r-date" data-i18n="reserve.date"></label>
+            <input id="r-date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="r-time" data-i18n="reserve.time"></label>
+            <input id="r-time" name="time" type="time" required min="12:00" max="22:30" step="900">
+          </div>
+          <div class="field">
+            <label for="r-guests" data-i18n="reserve.guests"></label>
+            <input id="r-guests" name="guests" type="number" min="1" max="40" value="2" required inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="r-occasion" data-i18n="reserve.occasion"></label>
+            <select id="r-occasion" name="occasion">
+              <option value="" data-i18n="reserve.occasion.none"></option>
+              <option value="birthday" data-i18n="reserve.occasion.birthday"></option>
+              <option value="business" data-i18n="reserve.occasion.business"></option>
+              <option value="family" data-i18n="reserve.occasion.family"></option>
+              <option value="other" data-i18n="reserve.occasion.other"></option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="r-notes" data-i18n="reserve.notes"></label>
+            <textarea id="r-notes" name="notes" rows="3"></textarea>
+          </div>
+          <div class="actions">
+            <button class="btn btn-solid" type="button" data-send="wa" data-i18n="reserve.submit.wa"></button>
+            <button class="btn" type="button" data-send="mail" data-i18n="reserve.submit.mail"></button>
+          </div>
+          <p class="hint" data-i18n="reserve.hint"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section dark" id="private">
+      <div class="container split reveal">
+        <div class="frame fx-img">
+          <div class="swiper fade-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/photos/board-long-2.jpg" alt="The long board laid down the table" loading="lazy" width="1050" height="1400"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/interior-6.jpg" alt="The long table laid for a group" loading="lazy" width="934" height="1400"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/board-long.jpg" alt="The metre-long board for eight" loading="lazy" width="802" height="1400"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="text left">
+          <p class="eyebrow" data-i18n="reserve.private.eyebrow"></p>
+          <h2 class="section-title"><span data-i18n="reserve.private.title"></span><span class="tr">Özel Davetler</span></h2>
+          <div class="rule"></div>
+          <p data-i18n="reserve.private.text"></p>
+          <a class="btn btn-gold" href="" data-site="whatsapp" data-i18n="reserve.private.cta"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="res.eyebrow"></p>
+        <h2 class="section-title"><span data-i18n="res.title"></span><span class="tr">Rezervasyon</span></h2>
+        <div class="rule"></div>
+        <div class="info-grid">
+          <div class="info">
+            <h3 data-i18n="res.phone"></h3>
+            <p class="big"><a href="tel:" data-site="phone"></a></p>
+            <p><a href="" data-site="whatsapp" data-i18n="res.whatsapp"></a></p>
+          </div>
+          <div class="info">
+            <h3 data-i18n="res.hours"></h3>
+            <p data-i18n="res.hours.lunch"></p>
+            <p data-i18n="res.hours.tea"></p>
+            <p data-i18n="res.hours.dinner"></p>
+          </div>
+          <div class="info">
+            <h3 data-i18n="contact.address.label"></h3>
+            <p data-i18n="contact.address"></p>
+            <p><a href="#" data-site="map" data-i18n="contact.map"></a></p>
+          </div>
+          <div class="info">
+            <h3 data-i18n="res.dress"></h3>
+            <p data-i18n="res.dress.text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="Sofra"><span class="logo"></span></a>
+          <p data-i18n="meta.tagline"></p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.visit"></h4>
+          <ul>
+            <li data-i18n="contact.address"></li>
+            <li><a href="tel:" data-site="phone"></a></li>
+            <li><a href="mailto:" data-site="email"></a></li>
+            <li><a href="#" data-site="map" data-i18n="contact.map"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.hours"></h4>
+          <ul>
+            <li data-i18n="footer.hours.1"></li>
+            <li data-i18n="footer.hours.2"></li>
+            <li data-i18n="res.hours.lunch"></li>
+            <li data-i18n="res.hours.dinner"></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.legal"></h4>
+          <ul>
+            <li><a href="reservations.html" data-i18n="nav.reserve"></a></li>
+            <li><a href="#" data-i18n="footer.work"></a></li>
+            <li><a href="#" data-i18n="footer.privacy"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        <span data-i18n="footer.rights"></span>
+        <span>sofra.com.bd</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+  <script src="assets/js/effects.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies / build output
+node_modules/
+vendor/
+dist/
+build/
+.next/
+out/
+
+# Logs
+*.log
+logs/
+_source/

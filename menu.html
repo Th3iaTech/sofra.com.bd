@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menus — Sofra · Anatolian kitchen in Dhaka</title>
+  <meta name="description" content="Sofra menu — meze, ocakbaşı kebaps, sharing boards, clay-pot dishes, seafood, baklava. Prices in BDT.">
+  <meta property="og:title" content="Menus — Sofra">
+  <meta property="og:image" content="https://sofra.com.bd/assets/img/photos/hero-menu.jpg">
+  <meta name="theme-color" content="#54131e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Poppins:wght@200;300;400&family=Noto+Serif+Bengali:wght@500;600&family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-left">
+        <button class="nav-toggle" type="button" aria-controls="drawer" aria-expanded="false" data-i18n-aria="nav.toggle"><span></span><span></span><span></span></button>
+      </div>
+      <a class="brand" href="index.html" aria-label="Sofra"><span class="logo"></span></a>
+      <div class="header-cta">
+        <a class="book" href="reservations.html" data-i18n="nav.reserve"></a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="bn" aria-pressed="false">বাং</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="logo" role="img" aria-label="Sofra"></span>
+      <button class="drawer-close" type="button"><span data-i18n="nav.close"></span> ✕</button>
+    </div>
+    <nav aria-label="Main">
+      <a href="index.html"><span data-i18n="nav.home"></span><small>Ana Sayfa</small></a>
+      <a href="about.html"><span data-i18n="nav.about"></span><small>Hakkımızda</small></a>
+      <a href="menu.html"><span data-i18n="nav.menu"></span><small>Menüler</small></a>
+      <a href="index.html#table"><span data-i18n="nav.table"></span><small>Sofra Tabakları</small></a>
+      <a href="index.html#events"><span data-i18n="nav.events"></span><small>Etkinlikler</small></a>
+      <a href="gallery.html"><span data-i18n="nav.gallery"></span><small>Galeri</small></a>
+      <a href="reservations.html"><span data-i18n="nav.reserve"></span><small>Rezervasyon</small></a>
+    </nav>
+    <div class="meta">
+      <p data-i18n="contact.address"></p>
+      <p><a href="tel:" data-site="phone"></a><br><a href="mailto:" data-site="email"></a></p>
+      <p data-i18n="top.hours"></p>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero hero-page">
+      <div class="media"><img src="assets/img/photos/hero-menu.jpg" alt="Mixed grill board with fries and kebaps" width="1600" height="901" fetchpriority="high"></div>
+      <div class="content">
+        <p class="eyebrow" data-i18n="menu.eyebrow"></p>
+        <h1 data-i18n="menu.title" data-i18n-title="menu.title"></h1>
+        <div class="rule"></div>
+        <p data-i18n="menu.text"></p>
+      </div>
+    </section>
+
+    <div class="menu-toolbar">
+      <div class="container">
+        <nav class="menu-tabs" id="menu-tabs" aria-label="Menu sections"></nav>
+        <div class="filters" role="group" aria-label="Dietary filters">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true" data-i18n="menu.filter.all"></button>
+          <button class="filter-btn" type="button" data-filter="veg" aria-pressed="false" data-i18n="menu.filter.veg"></button>
+          <button class="filter-btn" type="button" data-filter="vegan" aria-pressed="false" data-i18n="menu.filter.vegan"></button>
+          <button class="filter-btn" type="button" data-filter="gf" aria-pressed="false" data-i18n="menu.filter.gf"></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="menu-notice reveal">
+          <strong data-i18n="menu.notice.title"></strong>
+          <span class="price" data-i18n="menu.notice.price"></span>
+          <span data-i18n="menu.notice.text"></span>
+        </div>
+        <div id="menu-root"></div>
+        <div class="menu-legend">
+          <p data-i18n="menu.legend"></p>
+          <p data-i18n="menu.legend2"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center dark">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="res.eyebrow"></p>
+        <h2 class="section-title"><span data-i18n="res.title"></span><span class="tr">Rezervasyon</span></h2>
+        <div class="rule"></div>
+        <p class="lead" data-i18n="res.text"></p>
+        <p style="margin-top:2rem"><a class="btn btn-gold" href="reservations.html" data-i18n="nav.reserve"></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="Sofra"><span class="logo"></span></a>
+          <p data-i18n="meta.tagline"></p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.visit"></h4>
+          <ul>
+            <li data-i18n="contact.address"></li>
+            <li><a href="tel:" data-site="phone"></a></li>
+            <li><a href="mailto:" data-site="email"></a></li>
+            <li><a href="#" data-site="map" data-i18n="contact.map"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.hours"></h4>
+          <ul>
+            <li data-i18n="footer.hours.1"></li>
+            <li data-i18n="footer.hours.2"></li>
+            <li data-i18n="res.hours.lunch"></li>
+            <li data-i18n="res.hours.dinner"></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.legal"></h4>
+          <ul>
+            <li><a href="reservations.html" data-i18n="nav.reserve"></a></li>
+            <li><a href="#" data-i18n="footer.work"></a></li>
+            <li><a href="#" data-i18n="footer.privacy"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        <span data-i18n="footer.rights"></span>
+        <span>sofra.com.bd</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/menu-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+  <script src="assets/js/effects.js"></script>
+</body>
+</html>

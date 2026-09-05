@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sofra — Anatolian kitchen in Dhaka</title>
+  <meta name="description" content="Sofra is a Turkish restaurant in Gulshan, Dhaka — ocakbaşı charcoal kebaps, metre-long sharing boards, meze and baklava. Book a table.">
+  <meta property="og:title" content="Sofra — Anatolian kitchen in Dhaka">
+  <meta property="og:description" content="Ocakbaşı charcoal kebaps, sharing boards, meze and baklava in Gulshan, Dhaka.">
+  <meta property="og:image" content="https://sofra.com.bd/assets/img/photos/hero-home.jpg">
+  <meta property="og:url" content="https://sofra.com.bd/">
+  <meta property="og:type" content="restaurant">
+  <meta name="theme-color" content="#54131e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Poppins:wght@200;300;400&family=Noto+Serif+Bengali:wght@500;600&family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sofra",
+    "servesCuisine": "Turkish",
+    "url": "https://sofra.com.bd",
+    "image": "https://sofra.com.bd/assets/img/photos/hero-home.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+    "openingHours": "Mo-Su 12:00-23:00",
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-left">
+        <button class="nav-toggle" type="button" aria-controls="drawer" aria-expanded="false" data-i18n-aria="nav.toggle"><span></span><span></span><span></span></button>
+      </div>
+      <a class="brand" href="index.html" aria-label="Sofra"><span class="logo"></span></a>
+      <div class="header-cta">
+        <a class="book" href="reservations.html" data-i18n="nav.reserve"></a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="bn" aria-pressed="false">বাং</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="logo" role="img" aria-label="Sofra"></span>
+      <button class="drawer-close" type="button"><span data-i18n="nav.close"></span> ✕</button>
+    </div>
+    <nav aria-label="Main">
+      <a href="index.html"><span data-i18n="nav.home"></span><small>Ana Sayfa</small></a>
+      <a href="about.html"><span data-i18n="nav.about"></span><small>Hakkımızda</small></a>
+      <a href="menu.html"><span data-i18n="nav.menu"></span><small>Menüler</small></a>
+      <a href="index.html#table"><span data-i18n="nav.table"></span><small>Sofra Tabakları</small></a>
+      <a href="index.html#events"><span data-i18n="nav.events"></span><small>Etkinlikler</small></a>
+      <a href="gallery.html"><span data-i18n="nav.gallery"></span><small>Galeri</small></a>
+      <a href="reservations.html"><span data-i18n="nav.reserve"></span><small>Rezervasyon</small></a>
+    </nav>
+    <div class="meta">
+      <p data-i18n="contact.address"></p>
+      <p><a href="tel:" data-site="phone"></a><br><a href="mailto:" data-site="email"></a></p>
+      <p data-i18n="top.hours"></p>
+      <div class="social">
+        <a href="#" data-site="instagram" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.6c-.8.3-1.5.7-2.1 1.4C1.3 2.6.9 3.3.6 4.1.3 4.9.1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.2.6 3 .3.8.7 1.5 1.4 2.1.6.7 1.3 1.1 2.1 1.4.8.3 1.7.5 3 .6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.6.8-.3 1.5-.7 2.1-1.4.7-.6 1.1-1.3 1.4-2.1.3-.8.5-1.7.6-3 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-3-.3-.8-.7-1.5-1.4-2.1C21.4 1.3 20.7.9 19.9.6c-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
+        <a href="#" data-site="facebook" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12z"/></svg></a>
+        <a href="#" data-site="tiktok" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.5 0h4.1c.3 2.4 1.7 4.4 4 5.2.5.2 1 .3 1.6.3v4.1c-2 0-3.9-.6-5.5-1.7v7.6a7.5 7.5 0 1 1-7.5-7.5c.4 0 .8 0 1.2.1v4.2a3.4 3.4 0 1 0 2.1 3.2V0z"/></svg></a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="media">
+        <div class="swiper hero-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/photos/hero-home.jpg" alt="A mixed grill board with ayran on the Sofra table" width="1600" height="1067" fetchpriority="high"><span class="slide-cap" data-i18n="slide.1"></span></div>
+            <div class="swiper-slide"><img src="assets/img/photos/hero-gallery.jpg" alt="The long board with ayran glasses" width="1600" height="1067" loading="lazy"><span class="slide-cap" data-i18n="slide.2"></span></div>
+            <div class="swiper-slide"><img src="assets/img/photos/hero-reserve.jpg" alt="Two sharing boards on one table" width="1600" height="1067" loading="lazy"><span class="slide-cap" data-i18n="slide.3"></span></div>
+            <div class="swiper-slide"><img src="assets/img/photos/hero-about.jpg" alt="The Sofra dining room" width="1600" height="1067" loading="lazy"><span class="slide-cap" data-i18n="slide.4"></span></div>
+            <div class="swiper-slide"><img src="assets/img/photos/hero-menu.jpg" alt="Mixed grill with fries and kebaps" width="1600" height="901" loading="lazy"><span class="slide-cap" data-i18n="slide.5"></span></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev" aria-label="Previous"></div>
+          <div class="swiper-button-next" aria-label="Next"></div>
+        </div>
+      </div>
+      <div class="content">
+        <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+        <h1 data-i18n="hero.title"></h1>
+        <div class="rule"></div>
+        <p data-i18n="hero.text"></p>
+        <div class="actions">
+          <a class="btn btn-light" href="menu.html" data-i18n="hero.cta.menu"></a>
+          <a class="btn btn-gold" href="reservations.html" data-i18n="hero.cta.book"></a>
+        </div>
+      </div>
+      <a class="scroll" href="#intro" data-i18n="hero.scroll"></a>
+    </section>
+
+    <!-- Intro -->
+    <section class="section tight intro" id="intro">
+      <div class="container reveal">
+        <span class="logo" role="img" aria-label="Sofra"></span>
+        <p data-i18n="intro.text"></p>
+      </div>
+    </section>
+
+    <!-- Restaurant -->
+    <section class="section" id="restaurant" style="padding-top:0">
+      <div class="container split reveal">
+        <div class="frame fx-img">
+          <div class="swiper fade-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/photos/interior-1.jpg" alt="Dining room at Sofra with patterned chairs and lantern niches" loading="lazy" width="788" height="1400"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/hummus.jpg" alt="Hummus with warm pide" loading="lazy" width="933" height="1400"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/interior-3.jpg" alt="Arched lantern niches in the dining room" loading="lazy" width="788" height="1400"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/haydari.jpg" alt="Haydari and warm bread" loading="lazy" width="933" height="1400"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="text left">
+          <p class="eyebrow" data-i18n="rest.eyebrow"></p>
+          <h2 class="section-title"><span data-i18n="rest.title"></span><span class="tr">Restoran</span></h2>
+          <div class="rule"></div>
+          <p data-i18n="rest.p1"></p>
+          <p data-i18n="rest.p2"></p>
+          <a class="btn" href="about.html" data-i18n="rest.cta"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature dishes -->
+    <section class="section center" id="highlights" style="padding-top:0">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="high.eyebrow"></p>
+        <h2 class="section-title" data-i18n="high.title"></h2>
+        <div class="rule"></div>
+        <div class="dishes" data-highlights="kebap:0,kebap:4,kebap:8,sicak:2" data-images="assets/img/photos/adana-sm.jpg,assets/img/photos/chicken-2-sm.jpg,assets/img/photos/lamb-chops-sm.jpg,assets/img/photos/calamari-3-sm.jpg"></div>
+        <p style="margin-top:3rem"><a class="btn" href="menu.html" data-i18n="high.cta"></a></p>
+      </div>
+    </section>
+
+    <!-- Ocakbaşı -->
+    <section class="section dark" id="grill">
+      <div class="container split reverse reveal">
+        <div class="frame landscape fx-img">
+          <div class="swiper fade-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/photos/mixed-grill.jpg" alt="Kebaps, köfte and fries on a wooden board" loading="lazy" width="1400" height="773"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/kofte.jpg" alt="Köfte with fries and rice" loading="lazy" width="1400" height="934"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/wings.jpg" alt="Chicken wings from the grill" loading="lazy" width="1400" height="934"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/chicken-shish.jpg" alt="Chicken şiş with sauce" loading="lazy" width="1400" height="934"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="text left">
+          <p class="eyebrow" data-i18n="grill.eyebrow"></p>
+          <h2 class="section-title"><span data-i18n="grill.title"></span><span class="tr">Izgara</span></h2>
+          <div class="rule"></div>
+          <p data-i18n="grill.p1"></p>
+          <p data-i18n="grill.p2"></p>
+          <a class="btn btn-gold" href="menu.html#sec-kebap" data-i18n="grill.cta"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sharing table -->
+    <section class="section center" id="table">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="table.eyebrow"></p>
+        <h2 class="section-title" data-i18n="table.title"></h2>
+        <div class="rule"></div>
+        <p class="lead" data-i18n="table.text"></p>
+        <div class="swiper card-slider" style="margin-top:3rem">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><figure><img src="assets/img/photos/board-3.jpg" alt="Sharing board for two" loading="lazy" width="1400" height="788"><figcaption data-i18n="table.cap.1"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/platter-top.jpg" alt="The full platter seen from above" loading="lazy" width="1050" height="1400"><figcaption data-i18n="table.cap.2"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/board-long.jpg" alt="The metre-long board for eight" loading="lazy" width="802" height="1400"><figcaption data-i18n="table.cap.3"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/board-long-2.jpg" alt="The long board laid down the table" loading="lazy" width="1050" height="1400"><figcaption data-i18n="table.cap.4"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/platter.jpg" alt="Karışık ızgara platter" loading="lazy" width="1050" height="1400"><figcaption data-i18n="table.cap.5"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/board-candle.jpg" alt="Mixed grill board by candlelight" loading="lazy" width="1280" height="1280"><figcaption data-i18n="table.cap.6"></figcaption></figure></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev" aria-label="Previous"></div>
+          <div class="swiper-button-next" aria-label="Next"></div>
+        </div>
+        <div class="hero-actions" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem">
+          <a class="btn" href="menu.html#sec-sofra" data-i18n="table.cta"></a>
+          <a class="btn btn-solid" href="reservations.html#private" data-i18n="table.cta2"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's on -->
+    <section class="section center" id="events" style="background:var(--cream-2)">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="events.eyebrow"></p>
+        <h2 class="section-title" data-i18n="events.title"></h2>
+        <div class="rule"></div>
+        <div class="cards" data-stagger>
+          <article class="card">
+            <img src="assets/img/photos/bread-sm.jpg" alt="Lavaş bread" loading="lazy" width="720" height="450">
+            <div class="body">
+              <div class="when" data-i18n="events.1.when"></div>
+              <h3 data-i18n="events.1.title"></h3>
+              <p data-i18n="events.1.text"></p>
+              <a class="btn btn-sm" href="reservations.html" data-i18n="events.cta"></a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/photos/board-candle-sm.jpg" alt="Mixed grill board by candlelight" loading="lazy" width="720" height="450">
+            <div class="body">
+              <div class="when" data-i18n="events.2.when"></div>
+              <h3 data-i18n="events.2.title"></h3>
+              <p data-i18n="events.2.text"></p>
+              <a class="btn btn-sm" href="reservations.html" data-i18n="events.cta"></a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/photos/interior-6-sm.jpg" alt="The long table laid for a group" loading="lazy" width="720" height="450">
+            <div class="body">
+              <div class="when" data-i18n="events.3.when"></div>
+              <h3 data-i18n="events.3.title"></h3>
+              <p data-i18n="events.3.text"></p>
+              <a class="btn btn-sm" href="" data-site="whatsapp" data-i18n="events.enquire"></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax band -->
+    <section class="parallax" data-parallax-box>
+      <div class="bg"><img src="assets/img/photos/interior-4.jpg" alt="" loading="lazy" width="1050" height="1400" data-speed=".7"></div>
+      <div class="content reveal">
+        <span class="logo" role="img" aria-label="Sofra"></span>
+        <blockquote data-i18n="band.quote"></blockquote>
+        <cite data-i18n="band.cite"></cite>
+      </div>
+    </section>
+
+    <!-- Gallery strip -->
+    <section class="section center" id="glimpse">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="gallery.eyebrow"></p>
+        <h2 class="section-title" data-i18n="gallery.title"></h2>
+        <div class="rule"></div>
+        <div class="strip">
+          <figure class="fx-img" data-parallax-box><img src="assets/img/photos/interior-3.jpg" alt="Dining room with arched lantern niches" loading="lazy" width="788" height="1400" data-speed=".92"><figcaption data-i18n="gallery.cap.1"></figcaption></figure>
+          <figure class="fx-img" data-parallax-box><img src="assets/img/photos/prawns-2.jpg" alt="Grilled prawns with rice" loading="lazy" width="934" height="1400" data-speed="1.08"><figcaption data-i18n="gallery.cap.7"></figcaption></figure>
+          <figure class="fx-img" data-parallax-box><img src="assets/img/photos/soup.jpg" alt="Lentil soup beside a lantern" loading="lazy" width="934" height="1400" data-speed=".92"><figcaption data-i18n="gallery.cap.6"></figcaption></figure>
+        </div>
+        <p style="margin-top:2.5rem"><a class="link" href="gallery.html" data-i18n="gallery.cta"></a></p>
+      </div>
+    </section>
+
+    <!-- Reservations -->
+    <section class="section center dark" id="reservations">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="res.eyebrow"></p>
+        <h2 class="section-title"><span data-i18n="res.title"></span><span class="tr">Rezervasyon</span></h2>
+        <div class="rule"></div>
+        <p class="lead" data-i18n="res.text"></p>
+        <div class="info-grid">
+          <div class="info">
+            <h3 data-i18n="res.phone"></h3>
+            <p class="big"><a href="tel:" data-site="phone"></a></p>
+            <p><a href="" data-site="whatsapp" data-i18n="res.whatsapp"></a></p>
+          </div>
+          <div class="info">
+            <h3 data-i18n="res.hours"></h3>
+            <p data-i18n="res.hours.lunch"></p>
+            <p data-i18n="res.hours.tea"></p>
+            <p data-i18n="res.hours.dinner"></p>
+          </div>
+          <div class="info">
+            <h3 data-i18n="res.dress"></h3>
+            <p data-i18n="res.dress.text"></p>
+          </div>
+        </div>
+        <p style="margin-top:3rem"><a class="btn btn-gold" href="reservations.html" data-i18n="res.cta"></a></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section center" id="contact">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow"></p>
+        <h2 class="section-title"><span data-i18n="contact.title"></span><span class="tr">İletişim</span></h2>
+        <div class="rule"></div>
+        <div class="info-grid">
+          <div class="info">
+            <h3 data-i18n="contact.address.label"></h3>
+            <p data-i18n="contact.address"></p>
+            <p><a href="#" data-site="map" data-i18n="contact.map"></a></p>
+          </div>
+          <div class="info">
+            <h3 data-i18n="contact.email.label"></h3>
+            <p><a href="mailto:" data-site="email"></a></p>
+          </div>
+          <div class="info">
+            <h3 data-i18n="contact.parking.label"></h3>
+            <p data-i18n="contact.parking"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter center">
+      <div class="container reveal">
+        <h2 class="section-title" data-i18n="news.title"></h2>
+        <div class="rule"></div>
+        <p class="lead" data-i18n="news.text"></p>
+        <form id="newsletter-form">
+          <label class="visually-hidden" for="nl-email">Email</label>
+          <input id="nl-email" name="email" type="email" required data-i18n-placeholder="news.placeholder">
+          <button class="btn btn-solid" type="submit" data-i18n="news.cta"></button>
+        </form>
+        <p class="note" data-i18n="news.note"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="Sofra"><span class="logo"></span></a>
+          <p data-i18n="meta.tagline"></p>
+          <div class="social">
+            <a href="#" data-site="instagram" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.6c-.8.3-1.5.7-2.1 1.4C1.3 2.6.9 3.3.6 4.1.3 4.9.1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.2.6 3 .3.8.7 1.5 1.4 2.1.6.7 1.3 1.1 2.1 1.4.8.3 1.7.5 3 .6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.6.8-.3 1.5-.7 2.1-1.4.7-.6 1.1-1.3 1.4-2.1.3-.8.5-1.7.6-3 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-3-.3-.8-.7-1.5-1.4-2.1C21.4 1.3 20.7.9 19.9.6c-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
+            <a href="#" data-site="facebook" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12z"/></svg></a>
+            <a href="#" data-site="tiktok" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.5 0h4.1c.3 2.4 1.7 4.4 4 5.2.5.2 1 .3 1.6.3v4.1c-2 0-3.9-.6-5.5-1.7v7.6a7.5 7.5 0 1 1-7.5-7.5c.4 0 .8 0 1.2.1v4.2a3.4 3.4 0 1 0 2.1 3.2V0z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer.visit"></h4>
+          <ul>
+            <li data-i18n="contact.address"></li>
+            <li><a href="tel:" data-site="phone"></a></li>
+            <li><a href="mailto:" data-site="email"></a></li>
+            <li><a href="#" data-site="map" data-i18n="contact.map"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.hours"></h4>
+          <ul>
+            <li data-i18n="footer.hours.1"></li>
+            <li data-i18n="footer.hours.2"></li>
+            <li data-i18n="res.hours.lunch"></li>
+            <li data-i18n="res.hours.dinner"></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.legal"></h4>
+          <ul>
+            <li><a href="reservations.html" data-i18n="nav.reserve"></a></li>
+            <li><a href="#" data-i18n="footer.work"></a></li>
+            <li><a href="#" data-i18n="footer.privacy"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        <span data-i18n="footer.rights"></span>
+        <span>sofra.com.bd</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/menu-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+  <script src="assets/js/effects.js"></script>
+</body>
+</html>
