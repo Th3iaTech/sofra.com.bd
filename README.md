@@ -39,7 +39,8 @@ Open <http://localhost:8080/>.
 
 | Surface | Host |
 |---|---|
-| Public website | https://sofra.com.bd |
+| Public website | https://sofra.com.bd (domain not yet pointed) |
+| Demo (GitHub Pages, branch `main`, root) | https://th3iatech.github.io/sofra.com.bd/ |
 | Admin dashboard | https://admin.sofra.com.bd (planned) |
 | Backend / API | https://api.sofra.com.bd (planned) |
 
