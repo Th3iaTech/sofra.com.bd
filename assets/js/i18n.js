@@ -3,7 +3,8 @@
    Menu content lives in menu-data.js, not here. Contact details live in site-config.js. */
 window.SOFRA_I18N = {
   en: {
-    "meta.tagline": "Anatolian kitchen in Dhaka",
+    "meta.tagline": "The grill glows. Pull up a chair.",
+    "meta.kind": "Anatolian kitchen in Dhaka",
 
     "top.hours": "Open daily 12:00 – 23:00",
 
@@ -54,12 +55,12 @@ window.SOFRA_I18N = {
     "table.cta": "Sharing boards",
 
     "slide.1": "The sharing table",
-    "slide.2": "The long board",
+    "slide.2": "The full platter",
     "slide.3": "Two boards, one table",
     "slide.4": "The dining room",
     "slide.5": "From the ocakbaşı",
 
-    "band.quote": "Misafirperverlik and mehmandari — hospitality is the same word in Turkish and Bangla. At Sofra it is a long board, a full glass of ayran, and nobody in a hurry.",
+    "band.quote": "The grill glows. Pull up a chair.",
     "band.cite": "The Sofra table",
 
     "about.slider.title": "The room",
@@ -95,7 +96,7 @@ window.SOFRA_I18N = {
     "contact.eyebrow": "Find us",
     "contact.title": "Contact",
     "contact.address.label": "Address",
-    "contact.address": "House 00, Road 00, Gulshan 2, Dhaka 1212",
+    "contact.address": "Plot-188, Gulshan North Avenue, Dhaka 1212",
     "contact.map": "Open in Google Maps",
     "contact.email.label": "Email",
     "contact.parking.label": "Parking",
@@ -177,6 +178,29 @@ window.SOFRA_I18N = {
     "about.chef.text": "Replace with a short biography of the head chef: where they trained, their signature dish, and what they want guests to taste first.",
     "about.cta": "See the menus",
 
+    "heritage.eyebrow": "Where it comes from",
+    "heritage.title": "Fire, clay & the open door",
+    "heritage.lead": "Long before Anatolia had restaurants it had the hearth, the clay pot and a door left open for whoever was passing. Sofra is built on those three things.",
+    "heritage.1.title": "Charcoal",
+    "heritage.1.text": "Kebaps are cooked the old way — over a bed of hardwood charcoal, turned by hand, never rushed. The smoke is part of the seasoning, and the grill master reads the heat from the glow of the coals, not from a dial.",
+    "heritage.2.title": "Clay",
+    "heritage.2.text": "Güveç is layered into earthenware and baked low and slow, until the vegetables give up their juices and the meat falls apart. The pot comes to the table still bubbling.",
+    "heritage.3.title": "Hospitality",
+    "heritage.3.text": "In an Anatolian home a guest is fed first and asked questions later. Bread is torn for the whole table, plates keep arriving, and nobody leaves without a glass of çay.",
+    "heritage.cta": "Read our story",
+
+    "fire.eyebrow": "Slow fire",
+    "fire.quote": "Clay, embers and time — nothing from this hearth is hurried.",
+    "fire.cite": "From the clay pot",
+    "fire.play": "Play video",
+    "fire.pause": "Pause video",
+
+    "about.her.eyebrow": "Heritage",
+    "about.her.title": "From the hearth",
+    "about.her.p1": "Southern Anatolia sits where the old spice and silk roads met, and its cooking still carries them: pepper paste from Urfa, pistachios from Gaziantep, pomegranate molasses from Hatay, and the Adana habit of mincing lamb by hand with a long curved blade called a zırh.",
+    "about.her.p2": "Fire is the centre of that kitchen. At the ocakbaşı — literally “the head of the hearth” — guests sit close to the grill while the usta cooks in front of them. Everything around it moves slowly: güveç baked for hours in clay, yoghurt set overnight, dough rested before it meets the oven.",
+    "about.her.p3": "Around it all is the sofra itself — a cloth or low table where the family eats from shared dishes. The belief that the best seat is the one nearest the food, and that a guest is a blessing, travelled with the recipes. It felt at home in Dhaka straight away: here too, a meal is measured by how many people it feeds.",
+
     "reserve.eyebrow": "Reservations",
     "reserve.title": "Book a table",
     "reserve.text": "Send us your request and we will confirm by WhatsApp or phone within the hour during opening times.",
@@ -211,7 +235,8 @@ window.SOFRA_I18N = {
   },
 
   bn: {
-    "meta.tagline": "ঢাকায় আনাতোলিয়ান রান্নাঘর",
+    "meta.tagline": "কয়লা জ্বলছে। চেয়ার টেনে বসুন।",
+    "meta.kind": "ঢাকায় আনাতোলিয়ান রান্নাঘর",
 
     "top.hours": "প্রতিদিন খোলা দুপুর ১২টা – রাত ১১টা",
 
@@ -262,12 +287,12 @@ window.SOFRA_I18N = {
     "table.cta": "শেয়ারিং বোর্ড",
 
     "slide.1": "শেয়ারিং টেবিল",
-    "slide.2": "লং বোর্ড",
+    "slide.2": "পূর্ণ প্ল্যাটার",
     "slide.3": "দুই বোর্ড, এক টেবিল",
     "slide.4": "ডাইনিং রুম",
     "slide.5": "ওজাকবাশি থেকে",
 
-    "band.quote": "মিসাফিরপেরভেরলিক আর মেহমানদারি — তুর্কি আর বাংলায় আতিথেয়তা একই শব্দ। সোফরায় তার মানে একটা লম্বা বোর্ড, ভরা এক গ্লাস আয়রান, আর কারও কোনো তাড়া নেই।",
+    "band.quote": "কয়লা জ্বলছে। চেয়ার টেনে বসুন।",
     "band.cite": "সোফরার টেবিল",
 
     "about.slider.title": "ঘরটি",
@@ -303,7 +328,7 @@ window.SOFRA_I18N = {
     "contact.eyebrow": "আমাদের খুঁজুন",
     "contact.title": "যোগাযোগ",
     "contact.address.label": "ঠিকানা",
-    "contact.address": "বাড়ি ০০, রোড ০০, গুলশান ২, ঢাকা ১২১২",
+    "contact.address": "প্লট-১৮৮, গুলশান নর্থ অ্যাভিনিউ, ঢাকা ১২১২",
     "contact.map": "গুগল ম্যাপে দেখুন",
     "contact.email.label": "ইমেইল",
     "contact.parking.label": "পার্কিং",
@@ -384,6 +409,29 @@ window.SOFRA_I18N = {
     "about.chef.title": "আমাদের শেফ",
     "about.chef.text": "এখানে হেড শেফের সংক্ষিপ্ত পরিচয় লিখুন: কোথায় প্রশিক্ষণ নিয়েছেন, তাঁর সিগনেচার পদ, আর অতিথিরা প্রথমে কী চেখে দেখুন বলে তিনি চান।",
     "about.cta": "মেনু দেখুন",
+
+    "heritage.eyebrow": "শেকড়ের কথা",
+    "heritage.title": "আগুন, মাটি আর খোলা দরজা",
+    "heritage.lead": "আনাতোলিয়ায় রেস্তোরাঁ আসার অনেক আগে ছিল চুলা, মাটির হাঁড়ি আর পথচলতি মানুষের জন্য খোলা রাখা দরজা। সোফরা দাঁড়িয়ে আছে এই তিনটির ওপর।",
+    "heritage.1.title": "কাঠকয়লা",
+    "heritage.1.text": "কাবাব রান্না হয় পুরোনো নিয়মে — শক্ত কাঠের কয়লার ওপর, হাতে ঘুরিয়ে, একটুও তাড়াহুড়ো ছাড়া। ধোঁয়াও মশলারই অংশ, আর গ্রিলের ওস্তাদ তাপ মাপেন কয়লার আভা দেখে, কোনো কাঁটা দেখে নয়।",
+    "heritage.2.title": "মাটি",
+    "heritage.2.text": "গুভেচ সাজানো হয় মাটির পাত্রে, তারপর মৃদু আঁচে ধীরে ধীরে বেক হয় — যতক্ষণ না সবজি নিজের রস ছাড়ে আর মাংস নরম হয়ে ভেঙে পড়ে। হাঁড়ি টেবিলে আসে তখনও টগবগ করতে করতে।",
+    "heritage.3.title": "আতিথেয়তা",
+    "heritage.3.text": "আনাতোলিয়ার ঘরে অতিথিকে আগে খাওয়ানো হয়, কুশল জিজ্ঞেস করা হয় পরে। পুরো টেবিলের জন্য রুটি ছেঁড়া হয়, একের পর এক থালা আসতে থাকে, আর এক গ্লাস চা ছাড়া কেউ বিদায় নেন না।",
+    "heritage.cta": "আমাদের গল্প পড়ুন",
+
+    "fire.eyebrow": "ধীর আঁচ",
+    "fire.quote": "মাটি, অঙ্গার আর সময় — এই চুলার কোনো রান্নাই তাড়াহুড়োর নয়।",
+    "fire.cite": "মাটির পাত্র থেকে",
+    "fire.play": "ভিডিও চালান",
+    "fire.pause": "ভিডিও থামান",
+
+    "about.her.eyebrow": "ঐতিহ্য",
+    "about.her.title": "চুলার পাশ থেকে",
+    "about.her.p1": "দক্ষিণ আনাতোলিয়া পুরোনো মশলা আর রেশম পথের মিলনস্থলে, আর তার রান্নায় আজও সেই পথগুলোর ছাপ: উরফার মরিচবাটা, গাজিয়ানতেপের পেস্তা, হাতায়ের ডালিমের গুড়, আর আদানার সেই অভ্যাস — ‘জিরহ’ নামের লম্বা বাঁকা ছুরি দিয়ে হাতে খাসির মাংস কিমা করা।",
+    "about.her.p2": "সেই রান্নাঘরের কেন্দ্রে আগুন। ওজাকবাশিতে — যার আক্ষরিক অর্থ “চুলার মাথা” — অতিথিরা গ্রিলের কাছে বসেন আর ওস্তাদ তাঁদের সামনেই রান্না করেন। তার চারপাশে সবকিছু চলে ধীরলয়ে: মাটির পাত্রে ঘণ্টার পর ঘণ্টা বেক হওয়া গুভেচ, রাতভর জমানো দই, চুলায় ঢোকার আগে বিশ্রাম নেওয়া আটার খামির।",
+    "about.her.p3": "আর সবকিছু ঘিরে আছে সোফরা নিজেই — একটি দস্তরখান বা নিচু টেবিল, যেখানে পরিবার একই পাত্র থেকে খায়। সবচেয়ে ভালো আসন সেটিই যা খাবারের সবচেয়ে কাছে, আর অতিথি মানেই আশীর্বাদ — এই বিশ্বাস রেসিপির সঙ্গেই পথ পাড়ি দিয়েছে। ঢাকায় এসে তা সঙ্গে সঙ্গেই আপন লেগেছে: এখানেও একটি খাবারের মাপ হয় সেটি কতজনের পেট ভরায় তা দিয়ে।",
 
     "reserve.eyebrow": "রিজার্ভেশন",
     "reserve.title": "টেবিল বুক করুন",

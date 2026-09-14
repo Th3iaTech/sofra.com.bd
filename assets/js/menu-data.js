@@ -58,7 +58,7 @@ window.SOFRA_MENU = [
     id: "sofra",
     tr: "Sofra Tabakları",
     title: { en: "Sharing Boards", bn: "শেয়ারিং বোর্ড" },
-    img: "assets/img/photos/board-3.jpg",
+    img: "assets/img/photos/hero-reserve.jpg",
     items: [
       { n: { en: "Karışık Izgara for Two", bn: "দুজনের কারিশিক ইজগারা" }, d: { en: "Adana, chicken şiş, wings & köfte on a wooden board with rice, fries, salad & lavaş", bn: "কাঠের বোর্ডে আদানা, চিকেন শিশ, উইংস ও কোফতে; ভাত, ফ্রাই, সালাদ ও লাভাশসহ" }, p: 2990, c: "G/D", tag: "chef" },
       { n: { en: "Sofra Board for Four", bn: "চারজনের সোফরা বোর্ড" }, d: { en: "the full grill — lamb şiş, Adana, beyti, chicken şiş, wings, lamb chops — with all the sides", bn: "পুরো গ্রিল — কুজু শিশ, আদানা, বেয়তি, চিকেন শিশ, উইংস, খাসির চপ — সব সাইডসহ" }, p: 5490, c: "G/D" },
@@ -70,7 +70,7 @@ window.SOFRA_MENU = [
     id: "guvec",
     tr: "Güveçler & Tencere",
     title: { en: "From the Clay Pot", bn: "মাটির পাত্র থেকে" },
-    img: "assets/img/photos/sac-kavurma.jpg",
+    img: "assets/img/photos/musakka.jpg",
     items: [
       { n: { en: "Kuzu Güveç", bn: "কুজু গুভেচ" }, d: { en: "slow-baked lamb with aubergine, pepper & tomato in a clay pot", bn: "মাটির পাত্রে বেগুন, মরিচ ও টমেটোসহ ধীরে বেক করা খাসি" }, p: 1290, c: "", tag: "chef" },
       { n: { en: "Saç Kavurma", bn: "সাচ কাভুরমা" }, d: { en: "beef sautéed on the saç with peppers, onion & tomato", bn: "সাচে মরিচ, পেঁয়াজ ও টমেটোসহ ভাজা গরুর মাংস" }, p: 1190, c: "" },

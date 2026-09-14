@@ -7,7 +7,7 @@
   <meta name="description" content="Sofra is a Turkish restaurant in Gulshan, Dhaka — ocakbaşı charcoal kebaps, metre-long sharing boards, meze and baklava. Book a table.">
   <meta property="og:title" content="Sofra — Anatolian kitchen in Dhaka">
   <meta property="og:description" content="Ocakbaşı charcoal kebaps, sharing boards, meze and baklava in Gulshan, Dhaka.">
-  <meta property="og:image" content="https://sofra.com.bd/assets/img/photos/hero-home.jpg">
+  <meta property="og:image" content="https://sofra.com.bd/assets/img/photos/hero-reserve.jpg">
   <meta property="og:url" content="https://sofra.com.bd/">
   <meta property="og:type" content="restaurant">
   <meta name="theme-color" content="#54131e">
@@ -24,8 +24,9 @@
     "name": "Sofra",
     "servesCuisine": "Turkish",
     "url": "https://sofra.com.bd",
-    "image": "https://sofra.com.bd/assets/img/photos/hero-home.jpg",
-    "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+    "image": "https://sofra.com.bd/assets/img/photos/hero-reserve.jpg",
+    "address": { "@type": "PostalAddress", "streetAddress": "Plot-188, Gulshan North Avenue", "addressLocality": "Dhaka", "postalCode": "1212", "addressCountry": "BD" },
+    "hasMap": "https://share.google/tuDohqzPGflG0DSWH",
     "openingHours": "Mo-Su 12:00-23:00",
     "acceptsReservations": "True"
   }
@@ -82,11 +83,11 @@
       <div class="media">
         <div class="swiper hero-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/img/photos/hero-home.jpg" alt="A mixed grill board with ayran on the Sofra table" width="1600" height="1067" fetchpriority="high"><span class="slide-cap" data-i18n="slide.1"></span></div>
-            <div class="swiper-slide"><img src="assets/img/photos/hero-gallery.jpg" alt="The long board with ayran glasses" width="1600" height="1067" loading="lazy"><span class="slide-cap" data-i18n="slide.2"></span></div>
+            <div class="swiper-slide"><img src="assets/img/photos/board-candle.jpg" alt="A mixed grill board by candlelight" width="1280" height="1280" fetchpriority="high"><span class="slide-cap" data-i18n="slide.1"></span></div>
+            <div class="swiper-slide"><img src="assets/img/photos/platter-top.jpg" alt="The full platter seen from above" width="1050" height="1400" loading="lazy"><span class="slide-cap" data-i18n="slide.2"></span></div>
             <div class="swiper-slide"><img src="assets/img/photos/hero-reserve.jpg" alt="Two sharing boards on one table" width="1600" height="1067" loading="lazy"><span class="slide-cap" data-i18n="slide.3"></span></div>
             <div class="swiper-slide"><img src="assets/img/photos/hero-about.jpg" alt="The Sofra dining room" width="1600" height="1067" loading="lazy"><span class="slide-cap" data-i18n="slide.4"></span></div>
-            <div class="swiper-slide"><img src="assets/img/photos/hero-menu.jpg" alt="Mixed grill with fries and kebaps" width="1600" height="901" loading="lazy"><span class="slide-cap" data-i18n="slide.5"></span></div>
+            <div class="swiper-slide"><img src="assets/img/photos/wings-2.jpg" alt="Chicken wings with rice and charred pepper" width="1400" height="934" loading="lazy"><span class="slide-cap" data-i18n="slide.5"></span></div>
           </div>
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev" aria-label="Previous"></div>
@@ -139,8 +140,43 @@
       </div>
     </section>
 
+    <!-- Heritage -->
+    <section class="section center heritage" id="heritage" style="background:var(--cream-2)">
+      <div class="container reveal">
+        <p class="eyebrow" data-i18n="heritage.eyebrow"></p>
+        <h2 class="section-title"><span data-i18n="heritage.title"></span><span class="tr">Ateş, Toprak, Sofra</span></h2>
+        <div class="rule"></div>
+        <p class="lead" data-i18n="heritage.lead"></p>
+        <div class="values" data-stagger>
+          <div class="value"><div class="num">i</div><h3 data-i18n="heritage.1.title"></h3><span class="tr">Kömür</span><p data-i18n="heritage.1.text"></p></div>
+          <div class="value"><div class="num">ii</div><h3 data-i18n="heritage.2.title"></h3><span class="tr">Toprak</span><p data-i18n="heritage.2.text"></p></div>
+          <div class="value"><div class="num">iii</div><h3 data-i18n="heritage.3.title"></h3><span class="tr">Misafirperverlik</span><p data-i18n="heritage.3.text"></p></div>
+        </div>
+        <p style="margin-top:3rem"><a class="btn" href="about.html#heritage" data-i18n="heritage.cta"></a></p>
+      </div>
+    </section>
+
+    <!-- Slow fire video band (clip: Pexels 8189917, free under the Pexels License) -->
+    <section class="parallax video-band" id="slow-fire">
+      <div class="bg">
+        <video class="band-video" muted loop playsinline preload="metadata" poster="assets/video/clay-pot-fire-poster.jpg" aria-hidden="true">
+          <source src="assets/video/clay-pot-fire.webm" type="video/webm">
+          <source src="assets/video/clay-pot-fire.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="content reveal">
+        <p class="eyebrow" data-i18n="fire.eyebrow"></p>
+        <blockquote data-i18n="fire.quote"></blockquote>
+        <cite data-i18n="fire.cite"></cite>
+      </div>
+      <button class="video-toggle" type="button" aria-pressed="false">
+        <svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12"/><rect x="8.5" y="1" width="3.5" height="12"/></svg>
+        <svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1l10 6-10 6z"/></svg>
+      </button>
+    </section>
+
     <!-- Signature dishes -->
-    <section class="section center" id="highlights" style="padding-top:0">
+    <section class="section center" id="highlights">
       <div class="container reveal">
         <p class="eyebrow" data-i18n="high.eyebrow"></p>
         <h2 class="section-title" data-i18n="high.title"></h2>
@@ -156,7 +192,7 @@
         <div class="frame landscape fx-img">
           <div class="swiper fade-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="assets/img/photos/mixed-grill.jpg" alt="Kebaps, köfte and fries on a wooden board" loading="lazy" width="1400" height="773"></div>
+              <div class="swiper-slide"><img src="assets/img/photos/lamb-chops.jpg" alt="Lamb chops with fries and charred peppers" loading="lazy" width="933" height="1400"></div>
               <div class="swiper-slide"><img src="assets/img/photos/kofte.jpg" alt="Köfte with fries and rice" loading="lazy" width="1400" height="934"></div>
               <div class="swiper-slide"><img src="assets/img/photos/wings.jpg" alt="Chicken wings from the grill" loading="lazy" width="1400" height="934"></div>
               <div class="swiper-slide"><img src="assets/img/photos/chicken-shish.jpg" alt="Chicken şiş with sauce" loading="lazy" width="1400" height="934"></div>
@@ -184,11 +220,11 @@
         <p class="lead" data-i18n="table.text"></p>
         <div class="swiper card-slider" style="margin-top:3rem">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><figure><img src="assets/img/photos/board-3.jpg" alt="Sharing board for two" loading="lazy" width="1400" height="788"><figcaption data-i18n="table.cap.1"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/hero-reserve.jpg" alt="Two sharing boards laid for the table" loading="lazy" width="1600" height="1067"><figcaption data-i18n="table.cap.1"></figcaption></figure></div>
             <div class="swiper-slide"><figure><img src="assets/img/photos/platter-top.jpg" alt="The full platter seen from above" loading="lazy" width="1050" height="1400"><figcaption data-i18n="table.cap.2"></figcaption></figure></div>
-            <div class="swiper-slide"><figure><img src="assets/img/photos/board-long.jpg" alt="The metre-long board for eight" loading="lazy" width="802" height="1400"><figcaption data-i18n="table.cap.3"></figcaption></figure></div>
-            <div class="swiper-slide"><figure><img src="assets/img/photos/board-long-2.jpg" alt="The long board laid down the table" loading="lazy" width="1050" height="1400"><figcaption data-i18n="table.cap.4"></figcaption></figure></div>
-            <div class="swiper-slide"><figure><img src="assets/img/photos/platter.jpg" alt="Karışık ızgara platter" loading="lazy" width="1050" height="1400"><figcaption data-i18n="table.cap.5"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/lamb-chops.jpg" alt="Lamb chops with fries and charred peppers" loading="lazy" width="933" height="1400"><figcaption data-i18n="gallery.cap.4"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/prawns-2.jpg" alt="Grilled prawns with rice" loading="lazy" width="934" height="1400"><figcaption data-i18n="gallery.cap.7"></figcaption></figure></div>
+            <div class="swiper-slide"><figure><img src="assets/img/photos/kofte-3.jpg" alt="Köfte with rice and fries" loading="lazy" width="1400" height="934"><figcaption data-i18n="gallery.cap.4"></figcaption></figure></div>
             <div class="swiper-slide"><figure><img src="assets/img/photos/board-candle.jpg" alt="Mixed grill board by candlelight" loading="lazy" width="1280" height="1280"><figcaption data-i18n="table.cap.6"></figcaption></figure></div>
           </div>
           <div class="swiper-pagination"></div>
@@ -210,7 +246,7 @@
         <div class="rule"></div>
         <div class="cards" data-stagger>
           <article class="card">
-            <img src="assets/img/photos/bread-sm.jpg" alt="Lavaş bread" loading="lazy" width="720" height="450">
+            <img src="assets/img/photos/hummus-3-sm.jpg" alt="Hummus with a bread basket" loading="lazy" width="540" height="720">
             <div class="body">
               <div class="when" data-i18n="events.1.when"></div>
               <h3 data-i18n="events.1.title"></h3>
@@ -228,7 +264,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="assets/img/photos/interior-6-sm.jpg" alt="The long table laid for a group" loading="lazy" width="720" height="450">
+            <img src="assets/img/photos/hero-about-sm.jpg" alt="The Sofra dining room" loading="lazy" width="720" height="480">
             <div class="body">
               <div class="when" data-i18n="events.3.when"></div>
               <h3 data-i18n="events.3.title"></h3>
@@ -242,7 +278,7 @@
 
     <!-- Parallax band -->
     <section class="parallax" data-parallax-box>
-      <div class="bg"><img src="assets/img/photos/interior-4.jpg" alt="" loading="lazy" width="1050" height="1400" data-speed=".7"></div>
+      <div class="bg"><img src="assets/img/photos/hero-about.jpg" alt="" loading="lazy" width="1600" height="1067" data-speed=".7"></div>
       <div class="content reveal">
         <span class="logo" role="img" aria-label="Sofra"></span>
         <blockquote data-i18n="band.quote"></blockquote>

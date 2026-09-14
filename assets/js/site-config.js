@@ -3,12 +3,12 @@
 window.SOFRA_SITE = {
   name: "Sofra",
   city: "Dhaka",
-  phoneDisplay: "+880 1XXX-XXXXXX",
-  phone: "+8801XXXXXXXXX",
-  whatsapp: "8801XXXXXXXXX",
-  email: "hello@sofra.com.bd",
+  phoneDisplay: "+880 1713-115005",
+  phone: "+8801713115005",
+  whatsapp: "8801713115005",
+  email: "info@sofra.com.bd",
   reservationsEmail: "reservations@sofra.com.bd",
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=Sofra+Restaurant+Gulshan+Dhaka",
+  mapUrl: "https://share.google/tuDohqzPGflG0DSWH",
   social: {
     instagram: "https://www.instagram.com/sofra.dhaka",
     facebook: "https://www.facebook.com/sofra.dhaka",

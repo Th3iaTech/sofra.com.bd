@@ -204,6 +204,38 @@ window.SOFRA_FX = true;
     });
   }
 
+  /* ---------- 6. Background video bands — play only while on screen, with a pause button ---------- */
+  function initVideos() {
+    $$(".band-video").forEach(function (v) {
+      var band = v.closest(".video-band");
+      var btn = band && $(".video-toggle", band);
+      var userPaused = reduce; /* reduced motion: start paused on the poster, the button still plays it */
+      function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      function label() {
+        if (!btn) return;
+        var dict = (window.SOFRA_I18N || {})[document.documentElement.lang === "bn" ? "bn" : "en"] || {};
+        var key = v.paused ? "fire.play" : "fire.pause";
+        btn.setAttribute("aria-label", dict[key] || key);
+        btn.setAttribute("aria-pressed", v.paused ? "true" : "false");
+      }
+      if (btn) btn.addEventListener("click", function () {
+        if (v.paused) { userPaused = false; play(); } else { userPaused = true; v.pause(); }
+      });
+      v.addEventListener("play", label);
+      v.addEventListener("pause", label);
+      document.addEventListener("sofra:lang", label);
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting && !userPaused) play();
+            else if (!en.isIntersecting) v.pause();
+          });
+        }, { threshold: 0.15 }).observe(v);
+      } else if (!userPaused) play();
+      label();
+    });
+  }
+
   /* ---------- lock/unlock page scroll for drawer & lightbox ---------- */
   function lock(on) { if (!lenis) return; if (on) lenis.stop(); else lenis.start(); }
 
@@ -213,6 +245,7 @@ window.SOFRA_FX = true;
     initSliders();
     initReveals();
     initParallax();
+    initVideos();
     if (hasGsap) {
       window.addEventListener("load", function () { ScrollTrigger.refresh(); });
       document.fonts && document.fonts.ready.then(function () { ScrollTrigger.refresh(); });

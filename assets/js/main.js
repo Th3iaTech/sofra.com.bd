@@ -52,7 +52,7 @@
     var titleEl = $("[data-i18n-title]");
     if (titleEl) {
       var page = t(titleEl.getAttribute("data-i18n-title"), lang);
-      document.title = page + " — Sofra · " + t("meta.tagline", lang);
+      document.title = page + " — Sofra · " + t("meta.kind", lang);
     }
 
     $$(".lang-switch button").forEach(function (b) {
