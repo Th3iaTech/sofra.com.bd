@@ -209,8 +209,19 @@ window.SOFRA_FX = true;
     $$(".band-video").forEach(function (v) {
       var band = v.closest(".video-band");
       var btn = band && $(".video-toggle", band);
-      var userPaused = reduce; /* reduced motion: start paused on the poster, the button still plays it */
-      function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      var userPaused = false; /* slow ambient loop with a pause button — plays for everyone, visitors can stop it */
+      v.muted = true; v.defaultMuted = true; /* some browsers only allow muted autoplay when the property is set */
+      function play() {
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {
+          /* autoplay refused (e.g. iPhone Low Power Mode): start on the first tap, click, key or scroll */
+          var kick = function () {
+            ["pointerdown", "keydown", "scroll", "touchstart"].forEach(function (t) { window.removeEventListener(t, kick); });
+            if (!userPaused) v.play().catch(function () {});
+          };
+          ["pointerdown", "keydown", "scroll", "touchstart"].forEach(function (t) { window.addEventListener(t, kick, { passive: true, once: true }); });
+        });
+      }
       function label() {
         if (!btn) return;
         var dict = (window.SOFRA_I18N || {})[document.documentElement.lang === "bn" ? "bn" : "en"] || {};
