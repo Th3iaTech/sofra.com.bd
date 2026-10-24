@@ -145,9 +145,35 @@
       var img = imgs[i] ? '<div class="pic fx-img"><img src="' + esc(imgs[i].trim()) + '" alt="' + esc(item.n[lang] || item.n.en) + '" loading="lazy" width="600" height="750"></div>' : "";
       div.innerHTML = img +
         "<h3>" + esc(item.n[lang] || item.n.en) + '<span class="tr">' + esc(section.tr) + "</span></h3>" +
-        "<p>" + esc(item.d[lang] || item.d.en) + "</p>" +
+        (item.d ? "<p>" + esc(item.d[lang] || item.d.en) + "</p>" : "") +
         '<div class="price">' + formatPrice(item.p, lang) + "</div>";
       host.appendChild(div);
+    });
+  }
+
+  /* ---------- social spotlight embeds (index) ---------- */
+  function wireSocialEmbeds() {
+    var social = SITE.social || {};
+    $$("[data-embed]").forEach(function (box) {
+      var what = box.getAttribute("data-embed"), src = "", title = "";
+      if (what === "instagram" && social.instagram) {
+        var post = (SITE.instagramPosts || [])[0];
+        var m = post && String(post).match(/instagram\.com\/(p|reel)\/([A-Za-z0-9_-]+)/);
+        var handle = social.instagram.replace(/\/+$/, "").split("/").pop();
+        src = m ? "https://www.instagram.com/" + m[1] + "/" + m[2] + "/embed/captioned/" : "https://www.instagram.com/" + handle + "/embed/";
+        title = "Sofra on Instagram";
+      } else if (what === "facebook" && social.facebook) {
+        var w = Math.max(180, Math.min(500, Math.round(box.clientWidth || 500)));
+        src = "https://www.facebook.com/plugins/page.php?href=" + encodeURIComponent(social.facebook) +
+          "&tabs=timeline&width=" + w + "&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false";
+        title = "Sofra on Facebook";
+      }
+      if (!src) { box.closest(".spot-card").style.display = "none"; return; }
+      var f = document.createElement("iframe");
+      f.src = src; f.title = title; f.loading = "lazy";
+      f.setAttribute("allow", "encrypted-media; clipboard-write");
+      f.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+      box.appendChild(f);
     });
   }
 
@@ -256,6 +282,7 @@
     wireReservation();
     wireNewsletter();
     wireLightbox();
+    wireSocialEmbeds();
     $$(".lang-switch button").forEach(function (b) {
       b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang")); });
     });

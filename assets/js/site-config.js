@@ -13,5 +13,9 @@ window.SOFRA_SITE = {
     instagram: "https://www.instagram.com/sofra.dhaka",
     facebook: "https://www.facebook.com/sofra.dhaka",
     tiktok: "https://www.tiktok.com/@sofra.dhaka"
-  }
+  },
+  /* Instagram card on the home page. Empty = Instagram's own profile embed, which always shows the latest posts.
+     To feature one particular post instead, paste its link here, e.g. "https://www.instagram.com/p/ABC123xyz/"
+     (the first entry is shown). */
+  instagramPosts: []
 };

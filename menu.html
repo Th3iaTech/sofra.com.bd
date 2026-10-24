@@ -6,14 +6,14 @@
   <title>Menus — Sofra · Anatolian kitchen in Dhaka</title>
   <meta name="description" content="Sofra menu — meze, ocakbaşı kebaps, sharing boards, clay-pot dishes, seafood, baklava. Prices in BDT.">
   <meta property="og:title" content="Menus — Sofra">
-  <meta property="og:image" content="https://sofra.com.bd/assets/img/photos/kofte-2.jpg">
+  <meta property="og:image" content="https://sofra.com.bd/assets/img/menu/mixed-grill.jpg">
   <meta name="theme-color" content="#54131e">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Poppins:wght@200;300;400&family=Noto+Serif+Bengali:wght@500;600&family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260914b">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261025a">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
 
   <main>
     <section class="hero hero-page">
-      <div class="media"><img src="assets/img/photos/kofte-2.jpg" alt="Köfte with rice and fries" width="1400" height="934" fetchpriority="high"></div>
+      <div class="media"><img src="assets/img/menu/mixed-grill.jpg" alt="Sofra mixed grill platter" width="1140" height="1236" fetchpriority="high"></div>
       <div class="content">
         <p class="eyebrow" data-i18n="menu.eyebrow"></p>
         <h1 data-i18n="menu.title" data-i18n-title="menu.title"></h1>
@@ -68,28 +68,27 @@
 
     <div class="menu-toolbar">
       <div class="container">
-        <nav class="menu-tabs" id="menu-tabs" aria-label="Menu sections"></nav>
-        <div class="filters" role="group" aria-label="Dietary filters">
-          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true" data-i18n="menu.filter.all"></button>
-          <button class="filter-btn" type="button" data-filter="veg" aria-pressed="false" data-i18n="menu.filter.veg"></button>
-          <button class="filter-btn" type="button" data-filter="vegan" aria-pressed="false" data-i18n="menu.filter.vegan"></button>
-          <button class="filter-btn" type="button" data-filter="gf" aria-pressed="false" data-i18n="menu.filter.gf"></button>
-        </div>
+        <nav class="menu-tabs" id="menu-tabs" data-i18n-aria="menu.jump"></nav>
       </div>
     </div>
 
-    <section class="section">
+    <section class="section menu-page">
       <div class="container">
-        <div class="menu-notice reveal">
-          <strong data-i18n="menu.notice.title"></strong>
-          <span class="price" data-i18n="menu.notice.price"></span>
-          <span data-i18n="menu.notice.text"></span>
-        </div>
         <div id="menu-root"></div>
-        <div class="menu-legend">
-          <p data-i18n="menu.legend"></p>
-          <p data-i18n="menu.legend2"></p>
+      </div>
+    </section>
+
+    <section class="section menu-glance-band" id="at-a-glance">
+      <div class="container">
+        <div class="center">
+          <p class="eyebrow" data-i18n="menu.glance.eyebrow"></p>
+          <h2 class="section-title"><span data-i18n="menu.glance.title"></span><span class="tr">Bir bakışta</span></h2>
+          <div class="rule"></div>
         </div>
+        <div class="menu-glance" id="menu-glance"></div>
+        <p class="menu-prices" data-i18n="menu.prices"></p>
+        <p class="menu-note" data-i18n="menu.note"></p>
+        <p class="menu-credits">Photo credits — Beyti: <a href="https://commons.wikimedia.org/wiki/File:Beyti_with_bulgur_pilav.jpg" target="_blank" rel="noopener">E4024 / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> (cropped, colour-adjusted) · Shank: <a href="https://www.rawpixel.com/image/5927770/photo-image-public-domain-food-free" target="_blank" rel="noopener">rawpixel</a>, CC0.</p>
       </div>
     </section>
 
@@ -140,20 +139,20 @@
       </div>
       <div class="legal">
         <span data-i18n="footer.rights"></span>
-        <span>sofra.com.bd</span>
+        <span>sofra.com.bd · <span data-i18n="footer.credit"></span></span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/site-config.js?v=20260914b"></script>
-  <script src="assets/js/i18n.js?v=20260914b"></script>
-  <script src="assets/js/menu-data.js?v=20260914b"></script>
-  <script src="assets/js/main.js?v=20260914b"></script>
-  <script src="assets/js/menu.js?v=20260914b"></script>
+  <script src="assets/js/site-config.js?v=20261025a"></script>
+  <script src="assets/js/i18n.js?v=20261025a"></script>
+  <script src="assets/js/menu-data.js?v=20261025a"></script>
+  <script src="assets/js/main.js?v=20261025a"></script>
+  <script src="assets/js/menu.js?v=20261025a"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
-  <script src="assets/js/effects.js?v=20260914b"></script>
+  <script src="assets/js/effects.js?v=20261025a"></script>
 </body>
 </html>
