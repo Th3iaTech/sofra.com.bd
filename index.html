@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- HTTPS: send http:// visits to https:// (server-side redirect = Cloudflare 'Always Use HTTPS') -->
+  <script>if (location.protocol === "http:" && location.hostname.slice(-12) === "sofra.com.bd") location.replace("https:" + location.href.slice(5));</script>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sofra — Anatolian kitchen in Dhaka</title>
   <meta name="description" content="Sofra is a Turkish restaurant in Gulshan, Dhaka — ocakbaşı charcoal kebaps, metre-long sharing boards, meze and baklava. Book a table.">
