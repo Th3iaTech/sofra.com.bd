@@ -9,6 +9,7 @@ window.SOFRA_SITE = {
   email: "info@sofra.com.bd",
   reservationsEmail: "reservations@sofra.com.bd",
   mapUrl: "https://share.google/tuDohqzPGflG0DSWH",
+  hours: { open: "12:00", close: "23:00", tz: "Asia/Dhaka" },   /* used by the chat widget status line */
   social: {
     instagram: "https://www.instagram.com/sofra.dhaka",
     facebook: "https://www.facebook.com/sofra.dhaka",
